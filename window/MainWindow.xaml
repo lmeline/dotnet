@@ -9,10 +9,24 @@
         Height="600" 
         Width="1000"
         MaxHeight="600"
-        MaxWidth="1000"
-        ResizeMode="NoResize"
-        >
+        MaxWidth="1000" >
+    
     <Grid>
-        
+        <!--Définition de la grille principale-->
+        <!--Lignes-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <!--Colonnes-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+            
+        <TextBlock Text="Ici le menu" Grid.Row="0" Grid.Column="0"/>
+        <TextBlock Text="contenu principal" Grid.Row="1" Grid.Column="1"/>
+        <TextBlock Text="footer" Grid.Row="2" Grid.Column="0"/>
     </Grid>
 </Window>
